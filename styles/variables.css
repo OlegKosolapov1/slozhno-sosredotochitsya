@@ -4,13 +4,13 @@
 */
 
 :root {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
   --accent-color-text: #353430;
-  --title-color: #DB00FF;
+  --title-color: #db00ff;
   --section-subtitle-color: #000028;
-  --section-text-color: #F1B2CE;
-  --text-link-color: #F1B2CE;
-  --text-link-shadow-color: #FF0070;
+  --section-text-color: #f1b2ce;
+  --text-link-color: #f1b2ce;
+  --text-link-shadow-color: #ff0070;
   --background-color: #000028;
   --background-image: url(/images/cover-image-dark.png);
   --text-logo: inline;
