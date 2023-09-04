@@ -44,6 +44,7 @@
 .logo__text {
   display: var(--text-logo);
   position: absolute;
+  top: 0px;
   right: 25px;
   color: var(--accent-color);
   text-align: center;
@@ -262,9 +263,7 @@
   }
 
   .header__theme-menu {
-      display: grid;
       align-content: end;
-      justify-content: end;
   }
   .header__subtitle {
       align-content: flex-start;
@@ -350,7 +349,6 @@
       flex-direction: row;
   }
   .header__theme-menu {
-      display: grid;
       align-content: start;
       justify-content: center;
   }
