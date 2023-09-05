@@ -7,12 +7,14 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  padding: 10px;
 }
 
 .header {
   display: grid;
   position: relative;
   grid-template-rows: repeat(3, 1fr);
+  min-height: 648px;
 }
 
 .decorated-zone {
@@ -71,7 +73,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 18px;
 }
 
 .header__theme-menu-button:hover {
@@ -111,6 +113,11 @@
   text-shadow: 4px 4px 0px #ff0070;
   font-weight: 700;
   line-height: 82.5%;
+  font-size: clamp(116px, 7.25rem + 0vw, 116px);
+}
+
+.header__subtitle-block {
+  margin-block-start: 10px;
 }
 
 .title-decor {
@@ -133,6 +140,11 @@
   margin-block-start: 30px;
 }
 
+.main__section-start {
+  display: grid;
+  margin-block-start: 50px;
+}
+
 .main__section-title {
   color: var(--accent-color-text);
   font-weight: 700;
@@ -141,14 +153,17 @@
 .main__section-subtitle {
   color: var(--section-subtitle-color);
   font-weight: 700;
+  margin-block-start: 20px;
 }
 
 .main__section-subtitle-light {
   color: var(--section-subtitle-color);
+  margin-block-start: 20px;
 }
 
 .main__section-text {
   color: var(--section-text-color);
+  margin-block-start: 10px;
 }
 
 .text-link {
@@ -171,9 +186,16 @@
   border-bottom: 1px solid var(--accent-color-text);
 }
 
+.main__section-why {
+  grid-template-columns: 1fr;
+  margin-block-start: 50px;
+}
+
 .main__section-pictures {
   margin-block-start: 10px;
   display: grid;
+  gap: 10px;
+
 }
 
 .footer {
@@ -182,6 +204,7 @@
   margin-block-start: 50px;
   align-content: center;
   justify-content: center;
+  min-height: 648px;
 }
 
 .footer__text {
@@ -190,6 +213,7 @@
   text-shadow: 2px 2px 0px #ff0070;
   font-weight: 700;
   line-height: 82.5%;
+  font-size: clamp(116px, 7.25rem + 0vw, 116px);
 }
 
 .img {
@@ -199,49 +223,6 @@
 }
 
 /* Адаптивная верстка */
-
-/* Мобильная */
-
-@media (min-width: 375px) {
-  .page {
-      padding: 10px;
-  }
-  .header {
-      min-height: 648px;
-  }
-  .main__section-start {
-      display: grid;
-      margin-block-start: 50px;
-  }
-
-  .main__section-subtitle {
-      margin-block-start: 20px;
-  }
-
-  .main__section-subtitle-light {
-      margin-block-start: 20px;
-  }
-
-  .main__section-text {
-      margin-block-start: 10px;
-  }
-  .main__section-why {
-      grid-template-columns: 1fr;
-      margin-block-start: 50px;
-  }
-  .footer {
-      min-height: 648px;
-  }
-  .main__section-pictures {
-      gap: 10px;
-  }
-  .header__title {
-      font-size: clamp(116px, 7.25rem + 0vw, 116px);
-  }
-  .footer__text {
-      font-size: clamp(116px, 7.25rem + 0vw, 116px);
-  }
-}
 
 /* Планшет */
 
@@ -272,6 +253,7 @@
   }
   .header__subtitle-block {
       grid-column-start: 2;
+      margin-block-start: 0px;
   }
   .main__section-subtitle {
       margin-block-start: 20px;
@@ -330,6 +312,7 @@
   }
   .footer {
       min-height: 984px;
+      margin-block-start: 80px;
   }
   .footer__text {
       font-size: clamp(120px, 7.25rem + 0vw, 120px);
@@ -352,7 +335,9 @@
       align-content: start;
       justify-content: center;
   }
-
+  .header__subtitle-block {
+    margin-block-start: 20px;
+  }
   .main__section-why {
       gap: 10px;
   }

@@ -13,7 +13,7 @@
   --text-link-color: #353430;
   --text-link-shadow-color: #ff8dcb;
   --background-color: #fff1f7;
-  --background-image: url(/images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
   --text-logo: none;
 }
 
@@ -27,7 +27,7 @@
       --text-link-color: #353430;
       --text-link-shadow-color: #ff8dcb;
       --background-color: #fff1f7;
-      --background-image: url(/images/cover-image-light.png);
+      --background-image: url(../images/cover-image-light.png);
       --text-logo: none;
   }
 }

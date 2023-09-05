@@ -12,6 +12,6 @@
   --text-link-color: #f1b2ce;
   --text-link-shadow-color: #ff0070;
   --background-color: #000028;
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --text-logo: inline;
 }
